@@ -1,0 +1,16 @@
+build/
+DerivedData/
+.DS_Store
+xcuserdata/
+*.xcuserstate
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
+*.provisionprofile
+.env
+.env.*
+Private/
+Imports/
+campus-data*.json
