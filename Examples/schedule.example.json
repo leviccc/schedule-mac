@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "term": "演示学期",
+  "campus": "示例校区",
+  "firstMonday": "2026-09-14",
+  "timeBlocks": null,
+  "seasonalTimeBlocks": {
+    "summer": {
+      "5-6": {
+        "start": "14:30",
+        "end": "16:20"
+      }
+    },
+    "winter": {
+      "5-6": {
+        "start": "14:00",
+        "end": "15:50"
+      }
+    }
+  },
+  "courses": [
+    {
+      "title": "示例课程",
+      "weekday": 1,
+      "weekStart": 1,
+      "weekEnd": 16,
+      "periodStart": 5,
+      "periodEnd": 6,
+      "location": "示例教室",
+      "teachers": []
+    }
+  ],
+  "todos": []
+}

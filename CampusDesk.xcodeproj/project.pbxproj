@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	"archiveVersion" = 1;
+	"classes" = {
+	};
+	"objectVersion" = 56;
+	"objects" = {
+		"C75EED9DB61C7E8D49ACE058" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Shared/Models.swift";
+			"sourceTree" = "<group>";
+		};
+		"5F91F32286D0DDDF2872F1B7" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/OCR.swift";
+			"sourceTree" = "<group>";
+		};
+		"904B9D52475E1507063313E9" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/CampusDeskApp.swift";
+			"sourceTree" = "<group>";
+		};
+		"3999E01F5A8F62F1A837C1B2" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Widget/CampusWidget.swift";
+			"sourceTree" = "<group>";
+		};
+		"C74953C173648B8B29F00AC0" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.json";
+			"path" = "Resources/InitialSchedule.json";
+			"sourceTree" = "<group>";
+		};
+		"CEC2614A0049DB0B4415C406" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C74953C173648B8B29F00AC0";
+		};
+		"F9187E824FE171A6F0EFAE28" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ("CEC2614A0049DB0B4415C406");
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"8A677C6962E0A9A479527735" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"path" = "CampusDesk.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"CC7DB7C43F6197D664FA42C3" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.app-extension";
+			"path" = "CampusWidget.appex";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"0A3E27B8CA818264D75C8D81" = {
+			"isa" = "PBXGroup";
+			"children" = ("8A677C6962E0A9A479527735", "CC7DB7C43F6197D664FA42C3");
+			"name" = "Products";
+			"sourceTree" = "<group>";
+		};
+		"0D6E4079E36703EBD37C0072" = {
+			"isa" = "PBXGroup";
+			"children" = ("C75EED9DB61C7E8D49ACE058", "5F91F32286D0DDDF2872F1B7", "904B9D52475E1507063313E9", "3999E01F5A8F62F1A837C1B2", "C74953C173648B8B29F00AC0", "0A3E27B8CA818264D75C8D81");
+			"sourceTree" = "<group>";
+		};
+		"9AD757328FBA0087E54990FE" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"MACOSX_DEPLOYMENT_TARGET" = "14.0";
+				"SDKROOT" = "macosx";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"DEVELOPMENT_TEAM" = "";
+				"CAMPUS_APP_GROUP" = "$(DEVELOPMENT_TEAM).group.local.schedule.sample";
+				"PRODUCT_NAME" = "CampusWidget";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "local.schedule.sample.widget";
+				"INFOPLIST_FILE" = "Config/Widget-Info.plist";
+				"CODE_SIGN_ENTITLEMENTS" = "Config/CampusDesk.entitlements";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = ("$(inherited)", "@executable_path/../Frameworks", "@executable_path/../../../../Frameworks");
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"D20A933185A2F18535D467E0" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"MACOSX_DEPLOYMENT_TARGET" = "14.0";
+				"SDKROOT" = "macosx";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"DEVELOPMENT_TEAM" = "";
+				"CAMPUS_APP_GROUP" = "$(DEVELOPMENT_TEAM).group.local.schedule.sample";
+				"PRODUCT_NAME" = "CampusWidget";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "local.schedule.sample.widget";
+				"INFOPLIST_FILE" = "Config/Widget-Info.plist";
+				"CODE_SIGN_ENTITLEMENTS" = "Config/CampusDesk.entitlements";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = ("$(inherited)", "@executable_path/../Frameworks", "@executable_path/../../../../Frameworks");
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+		};
+		"BD8AC1C6E818972B9977F090" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ("9AD757328FBA0087E54990FE", "D20A933185A2F18535D467E0");
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"09F9550A32DA75144550BE3B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C75EED9DB61C7E8D49ACE058";
+		};
+		"A956945BEBD8672772AD50B4" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "3999E01F5A8F62F1A837C1B2";
+		};
+		"298BFCBB4EB10C217178601F" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ("09F9550A32DA75144550BE3B", "A956945BEBD8672772AD50B4");
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"2F8A7BAD25491C26655C51D8" = {
+			"isa" = "PBXNativeTarget";
+			"name" = "CampusWidget";
+			"productName" = "CampusWidget";
+			"productReference" = "CC7DB7C43F6197D664FA42C3";
+			"productType" = "com.apple.product-type.app-extension";
+			"buildConfigurationList" = "BD8AC1C6E818972B9977F090";
+			"buildPhases" = ("298BFCBB4EB10C217178601F");
+			"buildRules" = ();
+			"dependencies" = ();
+		};
+		"1241936D4DD3AAD68FE7BFBD" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "244210E48437B6556980A702";
+			"proxyType" = 1;
+			"remoteGlobalIDString" = "2F8A7BAD25491C26655C51D8";
+			"remoteInfo" = "CampusWidget";
+		};
+		"F26350DAFE3F19AABFD69AC4" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "2F8A7BAD25491C26655C51D8";
+			"targetProxy" = "1241936D4DD3AAD68FE7BFBD";
+		};
+		"FAE608D04BA82A38D1FB0D81" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "CC7DB7C43F6197D664FA42C3";
+			"settings" = {
+				"ATTRIBUTES" = ("RemoveHeadersOnCopy");
+			};
+		};
+		"8A1EED22144C3F04485A69EE" = {
+			"isa" = "PBXCopyFilesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"dstPath" = "";
+			"dstSubfolderSpec" = 13;
+			"files" = ("FAE608D04BA82A38D1FB0D81");
+			"name" = "Embed App Extensions";
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"B00CCDD09424E369308D67FA" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"MACOSX_DEPLOYMENT_TARGET" = "14.0";
+				"SDKROOT" = "macosx";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"DEVELOPMENT_TEAM" = "";
+				"CAMPUS_APP_GROUP" = "$(DEVELOPMENT_TEAM).group.local.schedule.sample";
+				"PRODUCT_NAME" = "CampusDesk";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "local.schedule.sample";
+				"INFOPLIST_FILE" = "Config/App-Info.plist";
+				"CODE_SIGN_ENTITLEMENTS" = "Config/CampusDesk.entitlements";
+				"LD_RUNPATH_SEARCH_PATHS" = ("$(inherited)", "@executable_path/../Frameworks");
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"1B104479E55E37CF8A63CBDF" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"MACOSX_DEPLOYMENT_TARGET" = "14.0";
+				"SDKROOT" = "macosx";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"DEVELOPMENT_TEAM" = "";
+				"CAMPUS_APP_GROUP" = "$(DEVELOPMENT_TEAM).group.local.schedule.sample";
+				"PRODUCT_NAME" = "CampusDesk";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "local.schedule.sample";
+				"INFOPLIST_FILE" = "Config/App-Info.plist";
+				"CODE_SIGN_ENTITLEMENTS" = "Config/CampusDesk.entitlements";
+				"LD_RUNPATH_SEARCH_PATHS" = ("$(inherited)", "@executable_path/../Frameworks");
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+		};
+		"06CB67C35A91E16DBD17B949" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ("B00CCDD09424E369308D67FA", "1B104479E55E37CF8A63CBDF");
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"B51299A280A01FF53CBD131C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C75EED9DB61C7E8D49ACE058";
+		};
+		"674F68149BBA7C52FACC2503" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "5F91F32286D0DDDF2872F1B7";
+		};
+		"A3CFEE234EE41D76DDACAEDD" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "904B9D52475E1507063313E9";
+		};
+		"6BAB02B549A96CC50D0CA977" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ("B51299A280A01FF53CBD131C", "674F68149BBA7C52FACC2503", "A3CFEE234EE41D76DDACAEDD");
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"C1E9827DB735CA9BAA54A540" = {
+			"isa" = "PBXNativeTarget";
+			"name" = "CampusDesk";
+			"productName" = "CampusDesk";
+			"productReference" = "8A677C6962E0A9A479527735";
+			"productType" = "com.apple.product-type.application";
+			"buildConfigurationList" = "06CB67C35A91E16DBD17B949";
+			"buildPhases" = ("6BAB02B549A96CC50D0CA977", "F9187E824FE171A6F0EFAE28", "8A1EED22144C3F04485A69EE");
+			"buildRules" = ();
+			"dependencies" = ("F26350DAFE3F19AABFD69AC4");
+		};
+		"73EBF6644258C120893E685D" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"MACOSX_DEPLOYMENT_TARGET" = "14.0";
+				"SDKROOT" = "macosx";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"DEVELOPMENT_TEAM" = "";
+				"CAMPUS_APP_GROUP" = "$(DEVELOPMENT_TEAM).group.local.schedule.sample";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"0B0C687DF8B6B8DC790B519C" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"MACOSX_DEPLOYMENT_TARGET" = "14.0";
+				"SDKROOT" = "macosx";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"DEVELOPMENT_TEAM" = "";
+				"CAMPUS_APP_GROUP" = "$(DEVELOPMENT_TEAM).group.local.schedule.sample";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+		};
+		"76F8DEC3DFE0BDB465198890" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ("73EBF6644258C120893E685D", "0B0C687DF8B6B8DC790B519C");
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"244210E48437B6556980A702" = {
+			"isa" = "PBXProject";
+			"attributes" = {
+				"LastUpgradeCheck" = "1600";
+				"TargetAttributes" = {
+					"C1E9827DB735CA9BAA54A540" = {
+						"SystemCapabilities" = {
+							"com.apple.ApplicationGroups.iOS" = {
+								"enabled" = 1;
+							};
+							"com.apple.Sandbox" = {
+								"enabled" = 1;
+							};
+						};
+					};
+					"2F8A7BAD25491C26655C51D8" = {
+						"SystemCapabilities" = {
+							"com.apple.ApplicationGroups.iOS" = {
+								"enabled" = 1;
+							};
+							"com.apple.Sandbox" = {
+								"enabled" = 1;
+							};
+						};
+					};
+				};
+			};
+			"buildConfigurationList" = "76F8DEC3DFE0BDB465198890";
+			"compatibilityVersion" = "Xcode 14.0";
+			"developmentRegion" = "zh-Hans";
+			"hasScannedForEncodings" = 0;
+			"knownRegions" = ("zh-Hans", "en", "Base");
+			"mainGroup" = "0D6E4079E36703EBD37C0072";
+			"productRefGroup" = "0A3E27B8CA818264D75C8D81";
+			"projectDirPath" = "";
+			"projectRoot" = "";
+			"targets" = ("C1E9827DB735CA9BAA54A540", "2F8A7BAD25491C26655C51D8");
+		};
+	};
+	"rootObject" = "244210E48437B6556980A702";
+}
