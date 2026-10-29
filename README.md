@@ -14,9 +14,9 @@
 
 默认课表为空，不附带个人课程或账号配置。当前界面不包含手动 JSON、图片或 PDF 导入；仓库保留的导入模型、OCR 源码仅供后续开发。
 
-![](/Users/a1234/Desktop/某些项目/Schedule-GitHub/主APP.png)
+![](主APP.png)
 
-<img src="file:///Users/a1234/Desktop/某些项目/Schedule-GitHub/小组件.png" title="" alt="" width="409">
+<img src="小组件.png" title="" alt="" width="409">
 
 ## 本机预览
 
