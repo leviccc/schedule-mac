@@ -2,6 +2,8 @@
 
 一个使用 SwiftUI 和 WidgetKit 编写的 macOS 课程与待办应用。此仓库是可自行构建的源码示例，不包含已公证的发行安装包。
 
+**<mark>建议下载后在agent的帮助下完成安装</mark>**
+
 ## 功能
 
 - 周一至周日、按第 1–10 节排列的课表网格；无课时段留空。
@@ -12,6 +14,10 @@
 
 默认课表为空，不附带个人课程或账号配置。当前界面不包含手动 JSON、图片或 PDF 导入；仓库保留的导入模型、OCR 源码仅供后续开发。
 
+![](/Users/a1234/Desktop/某些项目/Schedule-GitHub/主APP.png)
+
+<img src="file:///Users/a1234/Desktop/某些项目/Schedule-GitHub/小组件.png" title="" alt="" width="409">
+
 ## 本机预览
 
 需要 macOS 14+ 和兼容的 Apple 开发工具。运行：
@@ -21,7 +27,7 @@
 open build/日程.app
 ```
 
-预览版使用本地临时签名，不包含可安装的小组件。按本机架构编译；并未验证所有 macOS 版本和 Intel 设备。预览数据保存在 `~/Library/Application Support/ScheduleExample/campus-data.json`，与原作者自用应用隔离。
+预览版使用本地临时签名，**不包含可安装的小组件**。按本机架构编译；并未验证所有 macOS 版本和 Intel 设备。预览数据保存在 `~/Library/Application Support/ScheduleExample/campus-data.json`，与原作者自用应用隔离。
 
 ## 使用 Xcode 构建小组件
 
